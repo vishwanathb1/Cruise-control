@@ -57,7 +57,7 @@ int main(void)
             {
                 Speed = readADC(4);
                 _delay_ms(200);
-                if (Speed <= 40 && Speed => 200)
+                if (Speed <= 40 && Speed > 200)
                 {
                     CLR_BIT(PORTB, 5);
                     OCR1A=Speed;
